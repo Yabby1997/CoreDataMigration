@@ -13,9 +13,6 @@
 		4793217D2C0AD5E000D49B3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4793217C2C0AD5E000D49B3C /* Preview Assets.xcassets */; };
 		4793217F2C0AD5E000D49B3C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793217E2C0AD5E000D49B3C /* Persistence.swift */; };
 		479321822C0AD5E000D49B3C /* CoreDataMigration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 479321802C0AD5E000D49B3C /* CoreDataMigration.xcdatamodeld */; };
-		4793218C2C0AD5E000D49B3C /* CoreDataMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793218B2C0AD5E000D49B3C /* CoreDataMigrationTests.swift */; };
-		479321962C0AD5E000D49B3C /* CoreDataMigrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479321952C0AD5E000D49B3C /* CoreDataMigrationUITests.swift */; };
-		479321982C0AD5E000D49B3C /* CoreDataMigrationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479321972C0AD5E000D49B3C /* CoreDataMigrationUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +41,7 @@
 		4793217E2C0AD5E000D49B3C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		479321812C0AD5E000D49B3C /* CoreDataMigration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataMigration.xcdatamodel; sourceTree = "<group>"; };
 		479321872C0AD5E000D49B3C /* CoreDataMigrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataMigrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4793218B2C0AD5E000D49B3C /* CoreDataMigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationTests.swift; sourceTree = "<group>"; };
 		479321912C0AD5E000D49B3C /* CoreDataMigrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataMigrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		479321952C0AD5E000D49B3C /* CoreDataMigrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationUITests.swift; sourceTree = "<group>"; };
-		479321972C0AD5E000D49B3C /* CoreDataMigrationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				479321742C0AD5DF00D49B3C /* CoreDataMigration */,
-				4793218A2C0AD5E000D49B3C /* CoreDataMigrationTests */,
-				479321942C0AD5E000D49B3C /* CoreDataMigrationUITests */,
 				479321732C0AD5DF00D49B3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,12 +90,9 @@
 		479321742C0AD5DF00D49B3C /* CoreDataMigration */ = {
 			isa = PBXGroup;
 			children = (
-				479321752C0AD5DF00D49B3C /* CoreDataMigrationApp.swift */,
-				479321772C0AD5DF00D49B3C /* ContentView.swift */,
-				479321792C0AD5E000D49B3C /* Assets.xcassets */,
-				4793217E2C0AD5E000D49B3C /* Persistence.swift */,
-				479321802C0AD5E000D49B3C /* CoreDataMigration.xcdatamodeld */,
-				4793217B2C0AD5E000D49B3C /* Preview Content */,
+				479321A62C0AD62200D49B3C /* Resources */,
+				479321A52C0AD61500D49B3C /* Sources */,
+				479321A42C0AD61100D49B3C /* CoreData */,
 			);
 			path = CoreDataMigration;
 			sourceTree = "<group>";
@@ -116,21 +105,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4793218A2C0AD5E000D49B3C /* CoreDataMigrationTests */ = {
+		479321A42C0AD61100D49B3C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				4793218B2C0AD5E000D49B3C /* CoreDataMigrationTests.swift */,
+				479321802C0AD5E000D49B3C /* CoreDataMigration.xcdatamodeld */,
 			);
-			path = CoreDataMigrationTests;
+			path = CoreData;
 			sourceTree = "<group>";
 		};
-		479321942C0AD5E000D49B3C /* CoreDataMigrationUITests */ = {
+		479321A52C0AD61500D49B3C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				479321952C0AD5E000D49B3C /* CoreDataMigrationUITests.swift */,
-				479321972C0AD5E000D49B3C /* CoreDataMigrationUITestsLaunchTests.swift */,
+				479321772C0AD5DF00D49B3C /* ContentView.swift */,
+				4793217E2C0AD5E000D49B3C /* Persistence.swift */,
+				479321752C0AD5DF00D49B3C /* CoreDataMigrationApp.swift */,
 			);
-			path = CoreDataMigrationUITests;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		479321A62C0AD62200D49B3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				479321792C0AD5E000D49B3C /* Assets.xcassets */,
+				4793217B2C0AD5E000D49B3C /* Preview Content */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4793218C2C0AD5E000D49B3C /* CoreDataMigrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				479321982C0AD5E000D49B3C /* CoreDataMigrationUITestsLaunchTests.swift in Sources */,
-				479321962C0AD5E000D49B3C /* CoreDataMigrationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +425,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CoreDataMigration/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CoreDataMigration/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 5HZQ3M82FA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -458,7 +454,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CoreDataMigration/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CoreDataMigration/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 5HZQ3M82FA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
