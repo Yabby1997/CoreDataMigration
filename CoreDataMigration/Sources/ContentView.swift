@@ -23,7 +23,7 @@ struct ContentView: View {
                     NavigationLink {
                         VStack {
                             Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                            Text(item.memo ?? "nil")
+                            Text(item.memo?.memo ?? "nil")
                         }
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
@@ -47,9 +47,13 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
+            let newMemo = Memo(context: viewContext)
+            newMemo.memo = "V3 Memo " + UUID().uuidString
+            
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
-            newItem.memo = "MEMO " + UUID().uuidString
+            newItem.memo = newMemo
+            
             do {
                 try viewContext.save()
             } catch {

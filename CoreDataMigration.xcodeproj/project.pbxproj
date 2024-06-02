@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		47135A742C0AFE6500D4C419 /* CoreDataMigrationPolicyV1ToV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47135A732C0AFE6500D4C419 /* CoreDataMigrationPolicyV1ToV2.swift */; };
 		47135A762C0AFEB300D4C419 /* CoreDataMigrationMappingModelV1ToV2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 47135A752C0AFEB300D4C419 /* CoreDataMigrationMappingModelV1ToV2.xcmappingmodel */; };
+		47135A7B2C0C42BE00D4C419 /* CoreDataMigrationPolicyV2ToV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47135A7A2C0C42BE00D4C419 /* CoreDataMigrationPolicyV2ToV3.swift */; };
+		47135A852C0C46F800D4C419 /* CoreDataMigrationMappingModelV2ToV3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 47135A842C0C46F800D4C419 /* CoreDataMigrationMappingModelV2ToV3.xcmappingmodel */; };
 		479321762C0AD5DF00D49B3C /* CoreDataMigrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479321752C0AD5DF00D49B3C /* CoreDataMigrationApp.swift */; };
 		479321782C0AD5DF00D49B3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479321772C0AD5DF00D49B3C /* ContentView.swift */; };
 		4793217A2C0AD5E000D49B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479321792C0AD5E000D49B3C /* Assets.xcassets */; };
@@ -37,6 +39,9 @@
 /* Begin PBXFileReference section */
 		47135A732C0AFE6500D4C419 /* CoreDataMigrationPolicyV1ToV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationPolicyV1ToV2.swift; sourceTree = "<group>"; };
 		47135A752C0AFEB300D4C419 /* CoreDataMigrationMappingModelV1ToV2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = CoreDataMigrationMappingModelV1ToV2.xcmappingmodel; sourceTree = "<group>"; };
+		47135A772C0C40AC00D4C419 /* CoreDataMigrationV3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataMigrationV3.xcdatamodel; sourceTree = "<group>"; };
+		47135A7A2C0C42BE00D4C419 /* CoreDataMigrationPolicyV2ToV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationPolicyV2ToV3.swift; sourceTree = "<group>"; };
+		47135A842C0C46F800D4C419 /* CoreDataMigrationMappingModelV2ToV3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = CoreDataMigrationMappingModelV2ToV3.xcmappingmodel; sourceTree = "<group>"; };
 		479321722C0AD5DF00D49B3C /* CoreDataMigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479321752C0AD5DF00D49B3C /* CoreDataMigrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationApp.swift; sourceTree = "<group>"; };
 		479321772C0AD5DF00D49B3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +121,8 @@
 				479321802C0AD5E000D49B3C /* CoreDataMigration.xcdatamodeld */,
 				47135A732C0AFE6500D4C419 /* CoreDataMigrationPolicyV1ToV2.swift */,
 				47135A752C0AFEB300D4C419 /* CoreDataMigrationMappingModelV1ToV2.xcmappingmodel */,
+				47135A842C0C46F800D4C419 /* CoreDataMigrationMappingModelV2ToV3.xcmappingmodel */,
+				47135A7A2C0C42BE00D4C419 /* CoreDataMigrationPolicyV2ToV3.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -275,6 +282,8 @@
 				479321762C0AD5DF00D49B3C /* CoreDataMigrationApp.swift in Sources */,
 				47135A762C0AFEB300D4C419 /* CoreDataMigrationMappingModelV1ToV2.xcmappingmodel in Sources */,
 				479321822C0AD5E000D49B3C /* CoreDataMigration.xcdatamodeld in Sources */,
+				47135A852C0C46F800D4C419 /* CoreDataMigrationMappingModelV2ToV3.xcmappingmodel in Sources */,
+				47135A7B2C0C42BE00D4C419 /* CoreDataMigrationPolicyV2ToV3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,10 +615,11 @@
 		479321802C0AD5E000D49B3C /* CoreDataMigration.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				47135A772C0C40AC00D4C419 /* CoreDataMigrationV3.xcdatamodel */,
 				479321A72C0AD6A300D49B3C /* CoreDataMigrationV2.xcdatamodel */,
 				479321812C0AD5E000D49B3C /* CoreDataMigration.xcdatamodel */,
 			);
-			currentVersion = 479321A72C0AD6A300D49B3C /* CoreDataMigrationV2.xcdatamodel */;
+			currentVersion = 47135A772C0C40AC00D4C419 /* CoreDataMigrationV3.xcdatamodel */;
 			path = CoreDataMigration.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
